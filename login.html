@@ -3,19 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Inicio de Sesión</title>
+    <style>
+
+        body {
+                font-family: Arial,sans-serif;
+                margin: 20px;
+        }
+
+        header {
+                text-align: center;
+                padding: 10px;
+                background-color: #4CAF50;
+                color: white;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+       form {
+            max-width: 300px;
+            margin: 0 auto;
+       }
+
+       input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+       }
+
+       button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+       }
+       
+      footer {
+                text-align: center;
+                padding: 10px;
+                background-color: #4CAF50;
+                color: white;
+      }
+
+    </style>
 </head>
 <body>
-    <h1>Login</h1>
+    <header>
+        <h1>Recetas Vegetarianas</h1>
+        <p>Descubre deliciosas opciones vegetarianas para tu alimentación.</p>
+    </header>
 
-    <form action="#" method="post">
-        <label for="username">Nombre de Usuario:</label>
-        <input type="text" id="username" name="username" required>
+    <section>
+        <h2>Inicio de Sesión</h2>
+        <form action="procesar_login.php" method="post">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
 
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
 
-        <button type="submit">Iniciar Sesión</button>
-    </form>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2024 Comida Vegetariana</p>
+    </footer>
 </body>
 </html>
